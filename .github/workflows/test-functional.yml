@@ -49,6 +49,7 @@ jobs:
         with:
           jwt: ${{ secrets.LSTN }}
           ci: only
+          argus_version: v0.0
       - name: install dependencies
         id: install_deps
         uses: "gradio-app/gradio/.github/actions/install-all-deps@main"
